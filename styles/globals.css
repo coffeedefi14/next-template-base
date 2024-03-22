@@ -1,81 +1,138 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 47.4% 11.2%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 47.4% 11.2%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 100% 50%;
-    --destructive-foreground: 210 40% 98%;
-
-    --ring: 215 20.2% 65.1%;
-
+    --background: #ffffff;
+    --foreground: #0f172a;
+    --muted: #f1f5f9;
+    --muted-foreground: #64748b;
+    --popover: #ffffff;
+    --popover-foreground: #0f172a;
+    --border: #e2e8f0;
+    --input: #e2e8f0;
+    --card: #ffffff;
+    --card-foreground: #0f172a;
+    --primary: #0f172a;
+    --primary-foreground: #f8fafc;
+    --secondary: #f1f5f9;
+    --secondary-foreground: #0f172a;
+    --accent: #f1f5f9;
+    --accent-foreground: #0f172a;
+    --destructive: #ff0000;
+    --destructive-foreground: #f8fafc;
+    --ring: #94a3b8;
     --radius: 0.5rem;
+    --warning: #f59f0a;
+    --warning-foreground: #fef3c8;
   }
 
   .dark {
-    --background: 224 71% 4%;
-    --foreground: 213 31% 91%;
-
-    --muted: 223 47% 11%;
-    --muted-foreground: 215.4 16.3% 56.9%;
-
-    --accent: 216 34% 17%;
-    --accent-foreground: 210 40% 98%;
-
-    --popover: 224 71% 4%;
-    --popover-foreground: 215 20.2% 65.1%;
-
-    --border: 216 34% 17%;
-    --input: 216 34% 17%;
-
-    --card: 224 71% 4%;
-    --card-foreground: 213 31% 91%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 1.2%;
-
-    --secondary: 222.2 47.4% 11.2%;
-    --secondary-foreground: 210 40% 98%;
-
-    --destructive: 0 63% 31%;
-    --destructive-foreground: 210 40% 98%;
-
-    --ring: 216 34% 17%;
-
+    --background: #030711;
+    --foreground: #e1e7ef;
+    --muted: #0f1629;
+    --muted-foreground: #7f8ea3;
+    --accent: #1d283a;
+    --accent-foreground: #f8fafc;
+    --popover: #030711;
+    --popover-foreground: #94a3b8;
+    --border: #1d283a;
+    --input: #1d283a;
+    --card: #030711;
+    --card-foreground: #e1e7ef;
+    --primary: #f8fafc;
+    --primary-foreground: #020205;
+    --secondary: #0f172a;
+    --secondary-foreground: #f8fafc;
+    --destructive: #811d1d;
+    --destructive-foreground: #f8fafc;
+    --ring: #1d283a;
     --radius: 0.5rem;
+    --warning: #fef3c8;
+    --warning-foreground: #f59f0a;
   }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Style for hiding elements */
+.hidden {
+  display: none !important;
 }
 
 @layer base {
+  /* Reset box model and remove default margin/padding */
   * {
-    @apply border-border;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
   }
+
+  /* Apply styles to the body element */
   body {
+    max-width: 100vw;
+    overflow-x: hidden;
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
+    @apply min-h-screen font-sans antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .bodyContainer {
+    @apply relative flex min-h-screen flex-col;
+    
   }
 }
+
+
+
+
+.wrapper {
+  @apply flex-1;
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+@media screen and (max-width: 1536px) {
+  .wrapper {
+    max-width: 1366px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .wrapper {
+    max-width: 1024px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    max-width: 768px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    max-width: 640px;
+    font-size:14px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .wrapper {
+    max-width: 475px;
+    font-size: 14px;
+  }
+}
+
+a {
+  text-decoration: none;
+  transition: color 0.3s ease; /* Add a smooth transition effect */
+}
+
