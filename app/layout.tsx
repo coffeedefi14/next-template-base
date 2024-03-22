@@ -4,10 +4,12 @@ import { Metadata } from "next"
 import { siteConfig } from "@/config/site"
 import { fontSans } from "@/lib/fonts"
 import { cn } from "@/lib/utils"
-import { SiteHeader } from "@/components/site-header"
+import { SiteHeader } from "@/components/navbar/site-header"
+import { SiteFooter } from "@/components/site-footer"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
 import { ThemeProvider } from "@/components/theme-provider"
 import type { Viewport } from 'next'
+import Navbar from "@/components/navbar/Navbar";
 
 export const metadata: Metadata = {
   title: {
@@ -44,9 +46,14 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <div className="bodyContainer">
               <SiteHeader />
-              <div className="wrapper">{children}</div>
+
+              <div className="wrapper">
+              
+              {children}
+              </div>
+              <SiteFooter/>
             </div>
-            <TailwindIndicator />
+            
           </ThemeProvider>
         </body>
       </html>
