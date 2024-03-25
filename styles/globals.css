@@ -80,7 +80,7 @@ html {
     -moz-osx-font-smoothing: grayscale;
   }
   .bodyContainer {
-    @apply relative flex min-h-screen flex-col;
+    @apply min-h-screen flex-col;
     
   }
 }
