@@ -1,0 +1,72 @@
+.container {
+  margin:0 30px;
+  display: flex;
+  height: 60px; /* Equivalent to h-16 */
+  align-items: center; /* Equivalent to items-center */
+  justify-content: space-between; /* Equivalent to sm:justify-between */
+  gap: 40px; /* Equivalent to space-x-4 */
+}
+
+.logo {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex: 1;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex: 1;
+  font-size: 14px;
+  font-weight: 500; /* Equivalent to font-medium */
+  color: var(--muted-foreground);
+}
+.signup {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  
+}
+@media screen and (max-width: 1280px) {
+  .logo {
+    font-size: 18px;
+  }
+  .links {
+    font-size: 14px;
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .logo {
+    font-size: 18px;
+  }
+
+  .links {
+    font-size: 14px;
+    gap: 30px;
+  }
+  
+}
+@media screen and (max-width: 768px) {
+  .logo {
+    font-size: 16px;
+  }
+  .links {
+    font-size: 14px;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .logo {
+    font-size: 14px;
+  }
+  .links {
+    display: none;
+  }
+  .signup {
+    display: none;
+  }
+}

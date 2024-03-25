@@ -1,14 +1,18 @@
 import Link from "next/link"
 import { buttonVariants } from "@/components/ui/button"
+import styles from "./navbar.module.css"
 
 
 
 export function Signup() {
 
+   //code this to get authentiucation flag
+  const status  = "unauthenticated";
  
   return (
-  
-        <div className="flex gap-4">
+    <>
+     {status === "unauthenticated" && (
+        <div className={styles.signup}>
           
             <Link
               href="/"
@@ -28,10 +32,26 @@ export function Signup() {
                 Sign up
               
             </Link>
-         
+            </div>
+            )}
+           
+         {status === "authenticated" && (
+            <div className={styles.signup}>
+            <Link
+              href="/"
+              target="_blank"
+              rel="noreferrer"
+              className={buttonVariants({ variant: "default", size:"sm" })}
+            >
+             
+                Log out
+              
+            </Link>
+            </div>
+         )}
           
-        </div>
-     
+   
+     </>
     
   )
 }

@@ -2,14 +2,14 @@ import * as React from "react"
 import Link from "next/link"
 import { siteConfig } from "@/config/site"
 import Image from 'next/image';
-
+import styles from "./navbar.module.css"
 
 
 export function Logo() {
   return (
    
     <div>
-      <Link href="/" className="flex items-center space-x-2">
+      <Link href="/" className={styles.logo}>
         <Image
           src="/logo-min.svg"
           alt={siteConfig.name}
