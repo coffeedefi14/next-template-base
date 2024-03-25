@@ -90,7 +90,7 @@ html {
 
 
 .wrapper {
-  @apply flex-1;
+  display:flex;
   max-width: 1536px;
   margin-left: auto;
   margin-right: auto;
