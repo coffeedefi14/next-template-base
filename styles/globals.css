@@ -4,53 +4,53 @@
 
 @layer base {
   :root {
-    --background: #ffffff;
-    --foreground: #0f172a;
-    --muted: #f1f5f9;
-    --muted-foreground: #64748b;
-    --popover: #ffffff;
-    --popover-foreground: #0f172a;
-    --border: #e2e8f0;
-    --input: #e2e8f0;
-    --card: #ffffff;
-    --card-foreground: #0f172a;
-    --primary: #0f172a;
-    --primary-foreground: #f8fafc;
-    --secondary: #f1f5f9;
-    --secondary-foreground: #0f172a;
-    --accent: #f1f5f9;
-    --accent-foreground: #0f172a;
-    --destructive: #ff0000;
-    --destructive-foreground: #f8fafc;
-    --ring: #94a3b8;
+    --background: 255 255 255;
+    --foreground: 15 23 42;
+    --muted: 241 245 249;
+    --muted-foreground: 100 116 139;
+    --popover: 255 255 255;
+    --popover-foreground: 15 23 42;
+    --border: 226 232 240;
+    --input: 226 232 240;
+    --card: 255 255 255;
+    --card-foreground: 15 23 42;
+    --primary: 15 23 42;
+    --primary-foreground: 248 250 252;
+    --secondary: 241 245 249;
+    --secondary-foreground: 15 23 42;
+    --accent: 241 245 249;
+    --accent-foreground: 15 23 42;
+    --destructive: 255 0 0;
+    --destructive-foreground: 248 250 252;
+    --ring: 148 163 184;
+    --warning: 245 159 10;
+    --warning-foreground: 254 243 200;
     --radius: 0.5rem;
-    --warning: #f59f0a;
-    --warning-foreground: #fef3c8;
   }
 
   .dark {
-    --background: #030711;
-    --foreground: #e1e7ef;
-    --muted: #0f1629;
-    --muted-foreground: #7f8ea3;
-    --accent: #1d283a;
-    --accent-foreground: #f8fafc;
-    --popover: #030711;
-    --popover-foreground: #94a3b8;
-    --border: #1d283a;
-    --input: #1d283a;
-    --card: #030711;
-    --card-foreground: #e1e7ef;
-    --primary: #f8fafc;
-    --primary-foreground: #020205;
-    --secondary: #0f172a;
-    --secondary-foreground: #f8fafc;
-    --destructive: #811d1d;
-    --destructive-foreground: #f8fafc;
-    --ring: #1d283a;
+    --background: 3 7 17;
+    --foreground: 225 231 239;
+    --muted: 15 22 41;
+    --muted-foreground: 127 142 163;
+    --accent: 29 40 58;
+    --accent-foreground: 248 250 252;
+    --popover: 3 7 17;
+    --popover-foreground: 148 163 184;
+    --border: 29 40 58;
+    --input: 29 40 58;
+    --card: 3 7 17;
+    --card-foreground: 225 231 239;
+    --primary: 248 250 252;
+    --primary-foreground: 2 2 5;
+    --secondary: 15 23 42;
+    --secondary-foreground: 248 250 252;
+    --destructive: 129 29 29;
+    --destructive-foreground: 248 250 252;
+    --ring: 29 40 58;
+    --warning: 254 243 200;
+    --warning-foreground: 245 159 10;
     --radius: 0.5rem;
-    --warning: #fef3c8;
-    --warning-foreground: #f59f0a;
   }
 }
 html {
