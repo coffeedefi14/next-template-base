@@ -13,7 +13,7 @@ export function SiteFooter() {
 
   return (
     <footer className="bg-background fixed bottom-0 z-40 w-full">
-      <div className="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">
+      <div className="mr-4 flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">
         
         <div className="flex flex-1 items-center justify-end space-x-4">
           <nav className="flex items-center space-x-1">
@@ -33,7 +33,7 @@ export function SiteFooter() {
               </div>
             </Link>
             <Link
-              href={siteConfig.links.twitter}
+              href={siteConfig.links.facebook}
               target="_blank"
               rel="noreferrer"
             >
@@ -43,8 +43,8 @@ export function SiteFooter() {
                   variant: "ghost",
                 })}
               >
-                <Icons.twitter className="h-5 w-5 fill-current" />
-                <span className="sr-only">Twitter</span>
+                <Icons.facebook className="h-5 w-5 fill-current" />
+                <span className="sr-only">Facebook</span>
               </div>
             </Link>
             <ThemeToggle />

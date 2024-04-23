@@ -15,15 +15,15 @@ export function Signup() {
         <div className={styles.signup}>
           
             <Link
-              href="/"
+              href="/login"
               target="_blank"
               rel="noreferrer"
-              className={buttonVariants({ variant: "outline", size:"sm" })}
+              className={buttonVariants({ variant: "ghost", size:"sm" })}
             >
                 Login
             </Link>
             <Link
-              href="/"
+              href="/signup"
               target="_blank"
               rel="noreferrer"
               className={buttonVariants({ variant: "default", size:"sm" })}

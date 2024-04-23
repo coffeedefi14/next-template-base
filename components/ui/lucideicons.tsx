@@ -4,6 +4,7 @@ import {
   SunMedium,
   Twitter,
   Linkedin,
+  Facebook ,
   BotMessageSquare,
   type LucideIcon,
 } from "lucide-react";
@@ -15,6 +16,7 @@ export const Icons = {
   moon: Moon,
   twitter: Twitter,
   linkedin: Linkedin,
+  facebook: Facebook ,
   bot: BotMessageSquare,
   gitHub: (props: LucideProps) => (
     <svg viewBox="0 0 438.549 438.549" {...props}>

@@ -1,4 +1,7 @@
 import "@/styles/globals.css"
+import '@/styles/style.css';
+import '@/styles/star.css';
+
 import { Metadata } from "next"
 
 import { siteConfig } from "@/config/site"
@@ -6,10 +9,9 @@ import { fontSans } from "@/lib/fonts"
 import { cn } from "@/lib/utils"
 import { SiteHeader } from "@/components/navbar/site-header"
 import { SiteFooter } from "@/components/site-footer"
-import { TailwindIndicator } from "@/components/tailwind-indicator"
+import ContextProvider  from "@/components/context-provider"
 import { ThemeProvider } from "@/components/theme-provider"
 import type { Viewport } from 'next'
-import Navbar from "@/components/navbar/Navbar";
 
 export const metadata: Metadata = {
   title: {
@@ -44,6 +46,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           className={cn(fontSans.variable)}
         >
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+            <ContextProvider>
             <div className="bodyContainer">
               <SiteHeader />
 
@@ -53,7 +56,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
               </div>
               <SiteFooter/>
             </div>
-            
+            </ContextProvider>
           </ThemeProvider>
         </body>
       </html>

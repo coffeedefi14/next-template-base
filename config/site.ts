@@ -7,6 +7,7 @@ export const siteConfig = {
   
   links: {
     linkedin:"https://twitter.com/shadcn",
+    facebook:"https://twitter.com/shadcn",
     twitter: "https://twitter.com/shadcn",
     github: "https://github.com/shadcn/ui",
     docs: "https://ui.shadcn.com",
