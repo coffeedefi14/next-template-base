@@ -2,10 +2,10 @@
 import Link from "next/link"
 import { siteConfig } from "@/config/site"
 import { buttonVariants } from "@/components/ui/button"
-import { MainNav } from "@/components/navbar/main-nav"
-import { Logo } from "@/components/navbar/logo"
-import { Signup } from "@/components/navbar/signup"
-import   { Burger }  from "@/components/navbar/burger/burger"
+import { MainNav } from "@/components/home/navbar/main-nav"
+import { Logo } from "@/components/home/navbar/logo"
+import { Signup } from "@/components/home/navbar/signup"
+import   { Burger }  from "@/components/home/navbar/burger/burger"
 
 import styles from "./navbar.module.css"
 

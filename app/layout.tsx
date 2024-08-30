@@ -7,10 +7,9 @@ import { Metadata } from "next"
 import { siteConfig } from "@/config/site"
 import { fontSans } from "@/lib/fonts"
 import { cn } from "@/lib/utils"
-import { SiteHeader } from "@/components/navbar/site-header"
-import { SiteFooter } from "@/components/site-footer"
-import ContextProvider  from "@/components/context-provider"
-import { ThemeProvider } from "@/components/theme-provider"
+import { AppContextProvider } from '@/components/providers/AppContext'; // Import the context
+
+import { ThemeProvider } from "@/components/providers/theme-provider"
 import type { Viewport } from 'next'
 
 export const metadata: Metadata = {
@@ -25,6 +24,8 @@ export const metadata: Metadata = {
     
   },
 }
+//to avoid default caching of fetch api in nextjs server
+export const fetchCache = 'default-no-store';
 
 export const viewport: Viewport = {
   themeColor: [
@@ -46,17 +47,17 @@ export default function RootLayout({ children }: RootLayoutProps) {
           className={cn(fontSans.variable)}
         >
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            <ContextProvider>
-            <div className="bodyContainer">
-              <SiteHeader />
+            <AppContextProvider>
+         
 
-              <div className="wrapper">
+
+             
               
               {children}
-              </div>
-              <SiteFooter/>
-            </div>
-            </ContextProvider>
+             
+       
+         
+              </AppContextProvider>
           </ThemeProvider>
         </body>
       </html>

@@ -5,7 +5,7 @@ import { AppContext } from '@/components/context-provider'; // Import the contex
 import Link from "next/link"
 import Image from "next/image"
 import { buttonVariants } from "@/components/ui/button"
-import Switcher from '@/components/ui/switcher'
+import Switcher from '@/components/home/switcher'
 export function Hero() {
 
   // Use the useContext hook to access the context and retrieve the switcher value
