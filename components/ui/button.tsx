@@ -9,21 +9,21 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "border border-background bg-foreground text-background hover:bg-background hover:text-foreground hover:border-muted",
+        default: "border border-background bg-primary text-white hover:bg-primary-1 hover:border-muted",
         destructive:
           "bg-destructive text-destructive-foreground hover:bg-destructive/90",
         outline:
-          "border border-muted hover:bg-muted hover:text-foreground",
+          "border border-border hover:bg-primary-1 hover:text-white hover:border-background-1",
         secondary:
           "bg-muted border border-muted text-foreground hover:bg-muted hover:bg-background",
-        ghost: "hover:bg-muted hover:text-foreground",
+        ghost: "hover:bg-primary-1 hover:text-white ",
         link: "underline-offset-4 hover:underline text-primary",
       },
       size: {
         default: "h-10 py-2 px-4",
         sm: "h-9 px-3 rounded-md",
         lg: "h-11 px-8 rounded-md",
-        icon: "h-10 w-10",
+        icon: "h-8 w-8",
       },
     },
     defaultVariants: {
@@ -40,13 +40,14 @@ export interface ButtonProps
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant, size, asChild = false,disabled, ...props }, ref) => {
+  ({ className, variant, size, asChild = false,disabled,onClick, ...props }, ref) => {
     const Comp = asChild ? Slot : "button"
     return (
       <Comp
         className={cn(buttonVariants({ variant, size, className }))}
         ref={ref}
         disabled={disabled} // Add the disabled attribute
+         onClick={onClick} // Pass onClick prop to the button element or child component
         {...props}
       />
     )

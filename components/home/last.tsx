@@ -1,57 +1,61 @@
 
-import React, { useState } from 'react'
-import Image from "next/image"
-import Link from "next/link"
-import { buttonVariants } from "@/components/ui/button"
+import React, { useState } from 'react';
+import Image from "next/image";
+import Link from "next/link";
+import { buttonVariants } from "@/components/ui/button";
+import { DashboardTwo, } from '@/components/ui/othericons';
+
 export function Last() {
 
  
 
     return (
         <>
-        <section className="t-17.5 lg:pt-22.5 xl:pt-32.5 scroll-mt-17 mb-8 overflow-hidden">
-          <div className="max-w-[1170px] mx-auto px-4 sm:px-8 xl:px-0">
-            <div className="cta-box-gradient rounded-[30px] relative overflow-hidden px-4 py-10 lg:py-25 z-999">
+        <section id="last" className="relative mb-8 overflow-hidden pt-16 lg:pt-25 ">
+          <div className="about-divider-gradient absolute left-1/2 top-0 h-px w-full max-w-[770px] -translate-x-1/2">
+        </div>
+
+        <div className="mx-auto max-w-screen-xl  ">
+            <div className="cta-box-gradient relative overflow-hidden rounded-[30px] px-4 py-10 lg:py-25">
            
               <span className="absolute bottom-0 left-0 -z-10">
-                <Image src="/images/last/grid.svg" height={100} width={700} alt="grid" style={{ color: `var(--foreground)` }} /></span>
-              <div className="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
-                <span className="absolute left-1/2 bottom-0 -translate-x-1/2 -z-10">
-                  <Image src="/images/last/blur-22.svg" height={400} width={900} alt="blur" className="max-w-none"/>
+                <Image  src="/images/last/grid.svg" height={100} width={700} alt="grid" style={{ color: `var(--foreground)` }} /></span>
+              <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
+                <span className="absolute bottom-0 left-1/2 -z-10 -translate-x-1/2">
+                  <Image src="/images/last/blur-22.svg" height={400} width={1500} alt="blur"  className="max-w-none"/>
                 </span>
-                <span className="absolute left-1/2 bottom-0 -translate-x-1/2 -z-10">
+                <span className="absolute bottom-0 left-1/2 -z-10 -translate-x-1/2">
                   <Image src="/images/last/blur-23.svg" height={200} width={600} alt="blur" className="max-w-none"/>
                 </span>
-                <span className="absolute left-1/2 bottom-0 -translate-x-1/2 -z-10">
+                <span className="absolute bottom-0 left-1/2 -z-10 -translate-x-1/2">
                   <Image src="/images/last/blur-24.svg" height={100} width={600} alt="blur" className="max-w-none"/>
                 </span>
               </div>
 
              
-              <div className="max-w-[482px] w-full h-60 overflow-hidden absolute -z-10 -bottom-25 left-1/2 -translate-x-1/2">
+              <div className="absolute -bottom-25 left-1/2 -z-10 h-60 w-full max-w-[482px] -translate-x-1/2 overflow-hidden">
                 <div className="stars"></div>
                 <div className="stars2"></div>
               </div>
 
-              <div className="text-center">
+              <div className="text-center ">
                 <span
-                  className="hero-subtitle-gradient relative mb-4 font-medium text-sm inline-flex items-center gap-2 py-2 px-8 rounded-full">
-                  <Image src="/images/hero/icon-title.svg" height={20} width={20} alt="icon"/>
+                  className="hero-subtitle-gradient relative z-9 mb-4 inline-flex items-center gap-2 rounded-full px-8 py-2 text-sm font-medium">
+                  <DashboardTwo className="text-foreground" />
 
-                  <span className="text-muted-foreground">
+                  <span className="text-foreground">
                       Try our tool for Free
                     </span>
                 </span>
-                <h2 className="text-foreground mb-5 text-2xl font-extrabold sm:text-4xl xl:text-heading-2">
+                <h2 className="xl:text-heading-2 mb-5 text-2xl font-extrabold text-foreground sm:text-4xl">
                   What are you waiting for?
                 </h2>
-                <p className="max-w-[714px] mx-auto font-medium mb-9">
-                  Our AI writing tool is designed to empower you with exceptional
-                  writing capabilities, making the writing process more efficient,
-                  accurate, and enjoyable.
+                <p className="mx-auto mb-9 max-w-[714px] font-medium">
+                  Build FIRE plans that align with your preferences. <br/>
+                  Visualize your future and map out a path towards your desired life.
                 </p>
                 <Link
-                  href="#"
+                  href="/signup"
                   className={buttonVariants({ variant: "default", size: "lg" })}>
                   Get Started for Free
                     

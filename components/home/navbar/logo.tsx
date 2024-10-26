@@ -11,12 +11,12 @@ export function Logo() {
     <div>
       <Link href="/" className={styles.logo}>
         <Image
-          src="/logo-min.svg"
+          src="/logo.png"
           alt={siteConfig.name}
           width={24}
           height={24}
         />
-        <span className="inline-block font-bold">{siteConfig.name}</span>
+        <span className="inline-block font-bold text-foreground-1">{siteConfig.name}</span>
       </Link>
     </div>
     

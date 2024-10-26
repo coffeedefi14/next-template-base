@@ -39,62 +39,7 @@ export const AppContextProvider = ({ children }: AppContextProps) => {
 
   const [useronboarded, setUseronboarded] = useState<boolean>(false);
 
-  useEffect(() => {
-    const init = async () => {
-      const BACKEND_URL = siteConfig.links.api;
-      const app_name = siteConfig.links.app_name;
 
-      try {
-        const response = await fetch(`${BACKEND_URL}/init`, {
-          method: 'GET',
-          headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json',
-            'X-App-Identifier': app_name,
-          },
-          credentials: 'include', // Include credentials
-          mode: 'cors', // Enable CORS
-
-        });
-
-        const responseData = await response.json();
-
-        // Check the response structure and handle accordingly
-        if (responseData.error) {
-          // Handle error response
-          alert(`Error: ${responseData.message}`);
-          console.error(responseData.message);
-        } else {
-
-          setUserData((prevUserData: any) => {
-            const updatedUserData = { ...prevUserData };
-
-            updatedUserData.code = responseData.data.code;
-            if (responseData.data.unique_id) {
-              updatedUserData.unique_id = responseData.data.unique_id;
-            }
-            return updatedUserData;
-
-          });
-         
-          //console.log(responseData);
-        }
-
-
-      } catch (error: any) {
-        console.log(error);
-        alert(`Error: ${error.message}`);
-      }
-
-
-    };
-    if (!userData.code) {
-      //init();
-      console.log('init done')
-      
-    }
-    console.log(userData)
-  }, [userData]);
 
 
 

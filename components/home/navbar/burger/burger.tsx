@@ -1,9 +1,11 @@
 "use client";
 import Link from "next/link";
-import { buttonVariants } from "@/components/ui/button"
+import { buttonVariants } from "@/components/ui/button";
 import styles from "./burger.module.css";
-import { useState } from "react";
-import { signOut, useSession } from "next-auth/react";
+import { useState,  } from "react";
+import { NavItem } from "@/components/home/types/nav";
+
+
 
 interface MainNavProps {
   items?: NavItem[]
@@ -13,8 +15,6 @@ interface MainNavProps {
 export function Burger ({ items }: MainNavProps)  {
   const [open, setOpen] = useState(false);
 
-  //code this to get authentiucation flag
-  const status  = "unauthenticated";
 
   return (
     <>
@@ -43,11 +43,11 @@ export function Burger ({ items }: MainNavProps)  {
           )}
        </>
       ) : null}
-          {status === "unauthenticated" && (
+         
             <>
           
             <Link
-              href="/"
+              href="/login"
               target="_blank"
               rel="noreferrer"
               className={buttonVariants({ variant: "outline", size:"sm" })}
@@ -55,7 +55,7 @@ export function Burger ({ items }: MainNavProps)  {
                 Login
             </Link>
             <Link
-              href="/"
+              href="/signup"
               target="_blank"
               rel="noreferrer"
               className={buttonVariants({ variant: "default", size:"sm" })}
@@ -65,22 +65,7 @@ export function Burger ({ items }: MainNavProps)  {
               
             </Link>
             </>
-          )}
-          {status === "authenticated" && (
-            <>
-          
-            <Link
-              href="/"
-              target="_blank"
-              rel="noreferrer"
-              className={buttonVariants({ variant: "default", size:"sm" })}
-            >
-             
-               Log out
-              
-            </Link>
-            </>
-          )}
+         
          </div>
       )}
        

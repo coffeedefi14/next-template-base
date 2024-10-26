@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Disallow admin pages
+Disallow: /onboarding
+Disallow: /dashboard
+Disallow: /api
+
+# Sitemap location
+Sitemap: https://wishh.in/sitemap.xml

@@ -1,55 +1,54 @@
 "use client"
-import React from 'react'
-import { useContext } from 'react'
-import { AppContext } from '@/components/context-provider'; // Import the context
-import Link from "next/link"
-import Image from "next/image"
-import { buttonVariants } from "@/components/ui/button"
-import Switcher from '@/components/home/switcher'
+import React from 'react';
+import { useHomeContextData } from '@/components/providers/HomePageContext'; // Import the context
+import Link from "next/link";
+import Image from "next/image";
+import { buttonVariants } from "@/components/ui/button";
+import Switcher from '@/components/home/switcher';
 export function Hero() {
 
   // Use the useContext hook to access the context and retrieve the switcher value
-  const { switcher} = useContext(AppContext);
-
+  const { switcher } = useHomeContextData();
+  //console.log(switcher)
 
 
     return (
       <>
         
-        <section id="home" className="pt-17.5 lg:pt-22.5 xl:pt-32.5 scroll-mt-17 mb-8 overflow-hidden">
+        <section id="home" className="scroll-mt-17 overflow-hidden pt-6.5 lg:pt-7.5 xl:pt-9.5">
          
-          <div className="mx-auto max-w-screen-xl items-center justify-center text-center px-4 py-8 lg:px-12 lg:py-16">
+          <div className="mx-auto max-w-screen-xl items-center justify-center px-4 py-8 text-center lg:px-12 lg:py-16">
             <Switcher />
             {/*<a href="#" className="inline-flex items-center py-1 px-1 pr-4 mb-4 text-xs bg-secondary rounded-full text-foreground" role="alert">*/}
             {/*  <span className="text-xs bg-input rounded-full px-4 py-1.5 mr-3 font-medium">Invite only</span> <span className="text-xs"> Currently in Beta!</span>*/}
             {/*        */}{/*    <svg className="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" /></svg>*/}
             {/*        </a>*/}
-            <h1 className="mb-8 text-center text-4xl font-extrabold leading-none tracking-tight md:text-5xl lg:text-6xl ">
-              {switcher ? 'Your key to Financial Harmony as a Couple' : 'Your Pre-Marital Guide to Financial Compatibility'}
+            <h1 className="mb-8 text-center text-4xl font-extrabold leading-none tracking-tight md:text-4xl lg:text-6xl ">
+              {switcher ? 'Create Your Path to a stress-free Retirement!' : 'Stop Relying on Excel & Guesswork for FIRE Decisions!'}
             </h1>
 
-            <p className="text-muted-foreground mb-10 text-lg font-normal sm:px-16 lg:text-xl xl:px-48 ">
-              {switcher ? 'Our Financial Compatibility Engine helps couples to be on the same page regarding their Financial Future.' :
-                'Our Financial Compatibility Engine helps assess if one is capable to stay with a person in the long term.'}
+            <p className="mb-10 text-lg font-normal text-foreground-1 sm:px-16 lg:text-2xl xl:px-48 ">
+              {switcher ? 'Say goodbye to complex calculations and hello to a simple, personalized tool for achieving Efficient Retirement' :
+                'Our FIRE Calculator makes it easy to visualise your future and design a customized plan for the FIRE life you want'}
                 
             </p>
                     <div className="mb-4 flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-x-8 sm:space-y-0 lg:mb-16">
                         <Link
-                href="#"
+                href="/login"
                 className={buttonVariants({ variant: "default", size: "lg" })}>
-                {switcher ? 'Build a Strong Financial Foundation':            
+                {switcher ? 'Calculate My FIRE Number':            
 
-                'Take Our Free Assessment Today'}
+                'Build My Personalised Plan'}
                             <svg className="-mr-1 ml-2 size-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" /></svg>
                         </Link>
-              <Link
-                href="#"
-                className={buttonVariants({ variant: "outline", size: "lg" })}>
+              {/*<Link*/}
+              {/*  href="#"*/}
+              {/*  className={buttonVariants({ variant: "outline", size: "lg" })}>*/}
 
-                            {/*<svg className="mr-2 -ml-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z" /></svg>*/}
-                Sample
-                <svg className="ml-2 size-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" /></svg>
-                        </Link>
+              {/*              */}{/*<svg className="mr-2 -ml-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z" /></svg>*/}
+              {/*  Sample*/}
+              {/*  <svg className="ml-2 size-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" /></svg>*/}
+              {/*          </Link>*/}
             </div>
            
                     {/*<div className="px-4 mx-auto text-center md:max-w-screen-md lg:max-w-screen-lg lg:px-36">*/}
@@ -86,9 +85,40 @@ export function Hero() {
                     {/*    </div>*/}
                     {/*</div>*/}
           </div>
-          <div className="mt-17" data-wow-delay="0.1s">
-            <Image className="mx-auto" src="/images/hero/im-01.png" height={70} width={300} alt="hero" />
+
+          <div className="relative -top-10 mt-25">
+            <div className="relative">
+              <Image
+                className="absolute top-[-35%] left-0 z-40 nav-gradient hidden lg:block  h-auto"
+                src="/images/hero/hero3.png"
+                height={0}
+                width={500}
+                alt="hero2"
+              />
+              <Image
+                className="absolute bottom-[-20%] left-0 md:left-20 z-10 nav-gradient hidden lg:block  h-auto"
+                src="/images/hero/output.jpg"
+                height={0}
+                width={150}
+                alt="heroicon"
+              />
+              <Image
+                className="relative mx-auto nav-gradient"
+                src="/images/hero/hero.png"
+                height={0}
+                width={900}
+                alt="hero"
+              />
+              <Image
+                className="absolute top-[-20%] right-0 z-40 nav-gradient hidden lg:block"
+                src="/images/hero/hero2.png"
+                height={0}
+                width={350}
+                alt="hero2"
+              />
+            </div>
           </div>
+
             </section>
         </>
     )

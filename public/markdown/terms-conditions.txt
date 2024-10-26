@@ -1,0 +1,117 @@
+# Terms and Conditions
+
+**Effective Date:** SEPTEMBER 09,2024
+
+## 1. Introduction
+
+Welcome to WISHH.IN ("we," "our," or "us"). These Terms and Conditions ("Terms") govern your use of our website WISHH.IN AND ALL ITS SUBDOMAINS and our FIRE (Financial Independence, Retire Early) calculator platform. By accessing or using our platform, you agree to be bound by these Terms. If you do not agree with these Terms, please do not use our platform.
+
+## 2. Acceptance of Terms
+
+By using our platform, you acknowledge that you have read, understood, and agreed to these Terms. If you are using our platform on behalf of a company or other legal entity, you represent and warrant that you have the authority to bind that entity to these Terms.
+
+## 3. Eligibility
+
+You must be at least 18 years old to use our platform. By using our platform, you represent and warrant that you are at least 18 years old and have the legal capacity to enter into these Terms.
+
+## 4. Account Registration
+
+To access certain features of our platform, you may need to create an account. You agree to provide accurate and complete information during the registration process and to keep your account information up to date. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account.
+
+## 5. Use of the Platform
+
+### 5.1 License
+
+We grant you a limited, non-exclusive, non-transferable, and revocable license to access and use our platform for personal, non-commercial purposes, subject to these Terms.
+
+### 5.2 Prohibited Activities
+
+You agree not to:
+
+- Use our platform for any illegal or unauthorized purpose.
+- Violate any applicable laws or regulations.
+- Interfere with or disrupt the operation of our platform.
+- Attempt to gain unauthorized access to any part of our platform or any other user's account.
+- Transmit any viruses, malware, or other harmful code.
+- Engage in any activity that could harm, defame, or harass any person or entity.
+- Use our platform to send spam or unsolicited messages.
+
+## 6. Intellectual Property
+
+All content on our platform, including but not limited to text, graphics, logos, images, software, and code, is the property of ICEBERG TRIBE LLP or its licensors and is protected by intellectual property laws. You may not use, reproduce, modify, distribute, or create derivative works based on our content without our prior written consent.
+
+## 7. User Content
+
+### 7.1 Ownership
+
+You retain ownership of all content that you upload, submit, or post to our platform ("User Content"). By submitting User Content, you grant us a worldwide, non-exclusive, royalty-free, perpetual, irrevocable, and transferable license to use, reproduce, modify, distribute, and display your User Content in connection with our platform and for any other purpose.
+
+### 7.2 Responsibility
+
+You are solely responsible for your User Content and the consequences of posting or publishing it. You represent and warrant that you have all necessary rights to grant the license described above and that your User Content does not infringe upon the intellectual property rights of any third party.
+
+## 8. Disclaimer of Warranties
+
+Our platform is provided on an "as-is" and "as-available" basis. We make no representations or warranties of any kind, express or implied, regarding the operation or availability of our platform, or the information, content, materials, or products included on our platform. To the fullest extent permitted by law, we disclaim all warranties, express or implied, including but not limited to, implied warranties of merchantability, fitness for a particular purpose, and non-infringement.
+
+## 9. Limitation of Liability
+
+To the fullest extent permitted by law, we shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses, resulting from:
+
+- Your access to or use of or inability to access or use our platform.
+- Any conduct or content of any third party on our platform.
+- Any content obtained from our platform.
+- Unauthorized access, use, or alteration of your transmissions or content.
+
+## 10. Indemnification
+
+You agree to indemnify, defend, and hold harmless [Your Company Name], its affiliates, officers, directors, employees, agents, and representatives from and against any and all claims, damages, obligations, losses, liabilities, costs, and expenses (including reasonable attorneys' fees) arising from or related to:
+
+- Your use of or inability to use our platform.
+- Your violation of these Terms.
+- Your violation of any third-party right, including without limitation any copyright, property, or privacy right.
+- Any claim that your User Content caused damage to a third party.
+
+## 11. Termination
+
+We may terminate or suspend your account and bar access to our platform immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach these Terms. Upon termination, your right to use our platform will immediately cease. All provisions of these Terms which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity, and limitations of liability.
+
+## 12. Governing Law
+
+These Terms shall be governed by and construed in accordance with the laws of India. Any dispute arising out of or in connection with these Terms shall be subject to the exclusive jurisdiction of the courts in MUMBAI.
+
+## 13. Changes to Terms
+
+We may update these Terms from time to time. Any changes will be posted on this page with a revised effective date. We encourage you to review these Terms periodically to stay informed about how we are protecting your information. Your continued use of our platform following the posting of any changes to these Terms constitutes your acceptance of those changes.
+
+## 14. Contact Us
+
+If you have any questions or concerns about these Terms, please contact us at:
+
+ICEBERG TRIBE LLP
+THANE
+MAHARASHTRA
+
+## 15. Entire Agreement
+
+These Terms constitute the entire agreement between you and ICEBERG TRIBE LLP regarding the use of our platform and supersede all prior or contemporaneous communications and proposals, whether electronic, oral, or written, between you and ICEBERG TRIBE LLP with respect to our platform.
+
+## 16. Severability
+
+If any provision of these Terms is held to be invalid or unenforceable, such provision shall be struck and the remaining provisions shall be enforced.
+
+## 17. Waiver
+
+Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights.
+
+## 18. Assignment
+
+You may not assign or transfer these Terms, by operation of law or otherwise, without our prior written consent. Any attempt by you to assign or transfer these Terms, without such consent, will be null and of no effect. We may assign or transfer these Terms, at our sole discretion, without restriction. Subject to the foregoing, these Terms will bind and inure to the benefit of the parties, their successors, and permitted assigns.
+
+## 19. Notices
+
+Any notices or other communications permitted or required hereunder, including those regarding modifications to these Terms, will be in writing and given by us: (i) via email (in each case to the address that you provide); or (ii) by posting to our platform. For notices made by email, the date of receipt will be deemed the date on which such notice is transmitted.
+
+## 20. Force Majeure
+
+We shall not be liable for any failure to perform our obligations hereunder where such failure results from any cause beyond our reasonable control, including, without limitation, mechanical, electronic, or communications failure or degradation.

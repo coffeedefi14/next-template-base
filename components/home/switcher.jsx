@@ -1,13 +1,12 @@
 "use client"
-import { useContext } from 'react'
-import { AppContext } from '@/components/context-provider'; // Import the context
+import { useHomeContextData } from '@/components/providers/HomePageContext'; // Import the context
 
 
 const Switcher = () => {
 
   // Use the useContext hook to access the context and retrieve the switcher value
-  const { switcher, setSwitcher } = useContext(AppContext);
-
+  const { switcher, setSwitcher } = useHomeContextData();
+  //console.log(setSwitcher)
 
     const handleCheckboxChange = () => {
       setSwitcher(!switcher)
@@ -15,7 +14,7 @@ const Switcher = () => {
 
     return (
         <>
-        <label className='border-muted mb-4 inline-flex cursor-pointer select-none items-center justify-center rounded-full border'>
+        <label className='mb-4 inline-flex cursor-pointer select-none items-center justify-center rounded-full border border-border-1'>
                 <input
                     type='checkbox'
                     className='sr-only'
@@ -23,18 +22,18 @@ const Switcher = () => {
                     onChange={handleCheckboxChange}
                 />
                 <span
-            className={`flex items-center rounded-full px-8 py-1 text-xs font-medium ${!switcher ? 'text-foreground bg-muted' : 'text-muted-foreground'
+            className={`flex items-center rounded-full px-8 py-1 text-xs font-medium ${!switcher ? 'bg-interaction text-foreground' : 'text-grey-2'
                         }`}
                 >
                   
-                    Unmarried
+                    Financial Insights (FI)
                 </span>
                 <span
-            className={`flex items-center rounded-full px-8 py-1 text-xs font-medium ${switcher ? 'text-foreground bg-muted' : 'text-muted-foreground'
+            className={`flex items-center rounded-full px-8 py-1 text-xs font-medium ${switcher ? 'bg-interaction text-foreground' : 'text-grey-2'
                         }`}
                 >
                    
-                    Newly Married
+                    Retire Efficiently (RE)
                 </span>
             </label>
         </>

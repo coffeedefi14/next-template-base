@@ -7,7 +7,7 @@ import styles from "./navbar.module.css"
 export function Signup() {
 
    //code this to get authentiucation flag
-  const status  = "unauthenticated";
+  let status  = "unauthenticated";
  
   return (
     <>
@@ -16,7 +16,7 @@ export function Signup() {
           
             <Link
               href="/login"
-              target="_blank"
+              //target="_blank"
               rel="noreferrer"
               className={buttonVariants({ variant: "ghost", size:"sm" })}
             >
@@ -24,7 +24,7 @@ export function Signup() {
             </Link>
             <Link
               href="/signup"
-              target="_blank"
+             // target="_blank"
               rel="noreferrer"
               className={buttonVariants({ variant: "default", size:"sm" })}
             >

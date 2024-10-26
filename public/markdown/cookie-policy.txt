@@ -1,0 +1,60 @@
+# Cookie Policy
+
+**Effective Date:** SEPTEMBER 09,2024
+
+## 1. Introduction
+
+Welcome to WISHH ("we," "our," or "us"). This Cookie Policy explains how we use cookies and similar tracking technologies when you visit our website WISHH.IN AND ALL ITS SUBDOMAINS and use our FIRE (Financial Independence, Retire Early) calculator platform. By using our platform, you consent to the use of cookies as described in this policy.
+
+## 2. What are Cookies?
+
+Cookies are small text files that are placed on your device when you visit a website. They are widely used to make websites work more efficiently and to provide information to the owners of the site. Cookies can be "persistent" or "session" cookies. Persistent cookies remain on your device for a set period of time specified in the cookie. They are activated each time you visit the website that created that particular cookie. Session cookies are temporary and are deleted from your device when you close your browser.
+
+## 3. Types of Cookies We Use
+
+### 3.1 Essential Cookies
+
+These cookies are necessary for the operation of our platform. They enable basic functions like page navigation and access to secure areas of the website. The website cannot function properly without these cookies.
+
+### 3.2 Analytical/Performance Cookies
+
+These cookies allow us to recognize and count the number of visitors and to see how visitors move around our platform when they are using it. This helps us to improve the way our platform works, for example, by ensuring that users are finding what they are looking for easily.
+
+### 3.3 Functionality Cookies
+
+These cookies are used to recognize you when you return to our platform. They enable us to personalize our content for you, greet you by name, and remember your preferences (for example, your choice of language or region).
+
+### 3.4 Targeting/Advertising Cookies
+
+These cookies record your visit to our platform, the pages you have visited, and the links you have followed. We may use this information to make our platform and the advertising displayed on it more relevant to your interests. We may also share this information with third parties for this purpose.
+
+## 4. Third-Party Cookies
+
+Our platform may also use third-party cookies, which are cookies set by a domain other than the one being visited by the user. These cookies are used for our advertising and marketing efforts. They may be used to track your browsing habits so that we can show you relevant ads as you browse the web.
+
+## 5. How to Control Cookies
+
+You can control and/or delete cookies as you wish – for details, see [aboutcookies.org](http://www.aboutcookies.org/). You can delete all cookies that are already on your device and you can set most browsers to prevent them from being placed. If you do this, however, you may have to manually adjust some preferences every time you visit a site and some services and functionalities may not work.
+
+### 5.1 Browser Settings
+
+Most web browsers allow some control of most cookies through the browser settings. To find out more about cookies, including how to see what cookies have been set and how to manage and delete them, visit [www.allaboutcookies.org](http://www.allaboutcookies.org/).
+
+
+We may update this Cookie Policy from time to time. Any changes will be posted on this page with a revised effective date. We encourage you to review this Cookie Policy periodically to stay informed about how we are using cookies.
+
+## 7. Contact Us
+
+If you have any questions or concerns about this Cookie Policy or our use of cookies, please contact us at:
+
+ICEBERG TRIBE LLP
+THANE
+MAHARASHTRA
+
+## 8. Consent
+
+By using our platform, you consent to the use of cookies as described in this Cookie Policy. If you do not agree with the terms of this Cookie Policy, please do not use our platform.
+
+## 9. Governing Law
+
+This Cookie Policy shall be governed by and construed in accordance with the laws of India. Any dispute arising out of or in connection with this Cookie Policy shall be subject to the exclusive jurisdiction of the courts in MUMBAI.

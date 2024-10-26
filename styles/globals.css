@@ -4,32 +4,42 @@
 
 @layer base {
   :root {
-    --background: 255 255 255;
-    --foreground: 15 23 42;
-    --muted: 241 245 249;
-    --muted-foreground: 100 116 139;
-    --popover: 255 255 255;
-    --popover-foreground: 15 23 42;
-    --border: 226 232 240;
-    --input: 226 232 240;
-    --card: 255 255 255;
-    --card-foreground: 15 23 42;
-    --primary: 15 23 42;
-    --primary-foreground: 248 250 252;
-    --secondary: 241 245 249;
-    --secondary-foreground: 15 23 42;
-    --accent: 241 245 249;
-    --accent-foreground: 15 23 42;
-    --destructive: 255 0 0;
-    --destructive-foreground: 248 250 252;
-    --ring: 148 163 184;
-    --warning: 245 159 10;
-    --warning-foreground: 254 243 200;
+    --primary-1: 30 70 251;
+    --primary-2: 54 0 186;
+    --primary: 20 5 245;
+    --border: 115 161 255;
+    --border-1: 152 189 255;
+    --border-2: 183 208 255;
+    --background-1: 252 253 255;
+    --background: 245 249 255;
+    --interaction-2: 234 242 255;
+    --interaction-1: 221 233 255;
+    --interaction: 205 222 255;
+    --grey-1: 185 187 198;
+    --grey-2: 98 99 108;
+    --foreground-1: 30 31 36;
+    --foreground: 16 39 114;
     --radius: 0.5rem;
   }
 
   .dark {
-    --background: 3 7 17;
+    --primary-1: 30 70 251;
+    --primary-2: 54 0 186;
+    --primary: 20 5 245;
+    --border: 40 82 220;
+    --border-1: 34 71 188;
+    --border-2: 27 59 164;
+    --background-1: 9 16 34;
+    --background: 13 22 45;
+    --interaction-2: 13 32 91;
+    --interaction-1: 14 38 123;
+    --interaction: 20 48 146;
+    --grey-1: 185 187 198;
+    --grey-2: 98 99 108;
+    --foreground-1: 238 238 240;
+    --foreground: 209 225 255;
+
+   /* --background: 3 7 17;
     --foreground: 225 231 239;
     --muted: 15 22 41;
     --muted-foreground: 127 142 163;
@@ -49,7 +59,7 @@
     --destructive-foreground: 248 250 252;
     --ring: 29 40 58;
     --warning: 254 243 200;
-    --warning-foreground: 245 159 10;
+    --warning-foreground: 245 159 10;*/
     --radius: 0.5rem;
   }
 }
@@ -77,7 +87,7 @@ html {
     max-width: 100vw;
     overflow-x: hidden;
     overflow-y: auto; /* Enable vertical scrolling when necessary */
-    @apply bg-background text-foreground;
+    @apply bg-background-1 text-foreground-1;
     font-feature-settings: "rlig" 1, "calt" 1;
     @apply font-sans antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -145,4 +155,31 @@ a {
   text-decoration: none;
   transition: color 0.3s ease; /* Add a smooth transition effect */
 }
+
+/* WebKit-based browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 8px; /* Slim scrollbar */
+  height: 8px; /* For horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(var(--background-1)/0.6); /* Base color for the track */
+  border-radius: 10px; /* Smoother rounded corners */
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(var(--grey-2)/0.4); /* Base color for the scrollbar thumb */
+  border-radius: 10px; /* Match the track border radius for consistency */
+  border: 1px solid transparent; /* Transparent border for spacing */
+  background-clip: padding-box; /* Ensure the thumb background stays within the border */
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out; /* Smooth transitions */
+}
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(var(--primary-1)/0.5); /* Darker color on hover for better contrast */
+    border-color: rgba(255, 255, 255, 0.3); /* Light border to make the thumb pop */
+  }
+
 

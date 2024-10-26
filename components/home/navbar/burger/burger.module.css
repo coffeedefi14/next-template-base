@@ -14,7 +14,7 @@
 .line {
   width: 100%;
   height: 2px;
-  background-color: rgb(var(--foreground));
+  background-color: rgb(var(--foreground-1));
 }
 /* Define the transition for the open state */
 .burger.open .line {
@@ -37,7 +37,7 @@
   position: absolute;
   top: 60px;
   left: 0;
-  background-color: rgb(var(--background));
+  background-color: rgb(var(--background-1));
   color:var(--foreground);
   height: calc(100vh - 60px);
   width: 100%;
@@ -50,7 +50,7 @@
   z-index: 0;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 690px) {
   .burger {
     display: flex;
   }
